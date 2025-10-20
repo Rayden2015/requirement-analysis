@@ -51,3 +51,30 @@ Good software rarely happens by accident. Requirement Analysis gives teams a sha
 
 - Sustainable change: As needs evolve, managed requirements and traceability make it possible to assess impact quickly, prioritize with confidence, and update plans without chaos.
 
+## Key Activities in Requirement Analysis
+
+- Requirement Gathering:
+  - Identify stakeholders (users, sponsors, domain experts, operations, compliance) and existing artifacts (legacy systems, manuals, policies).
+  - Establish the project context: goals, scope, constraints, dependencies, and success measures.
+  - Capture high-level needs and business outcomes before diving into details.
+
+- Requirement Elicitation:
+  - Use interviews, workshops, observation, surveys, document analysis, and prototyping to uncover needs.
+  - Ask probing questions to reveal implicit expectations, constraints, and edge cases.
+  - Resolve conflicting viewpoints and prioritize what delivers the most value.
+
+- Requirement Documentation:
+  - Record functional and non-functional requirements clearly and unambiguously.
+  - Use artifacts such as an SRS, user stories with acceptance criteria, use cases, and process flows.
+  - Maintain a single source of truth that is versioned, searchable, and accessible to all stakeholders.
+
+- Requirement Analysis and Modeling:
+  - Structure and refine requirements, remove ambiguity, and check completeness and consistency.
+  - Model behavior and data using use-case diagrams, sequence diagrams, state machines, domain models, and wireframes.
+  - Prioritize and decompose requirements into implementable units that align with roadmap and capacity.
+
+- Requirement Validation:
+  - Review requirements with stakeholders to verify correctness, feasibility, and testability.
+  - Define acceptance criteria and link requirements to test cases for traceability.
+  - Pilot or prototype critical flows to de-risk assumptions before full implementation.
+
