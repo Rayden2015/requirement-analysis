@@ -37,3 +37,17 @@ When performed:
 - Implementation and testing: maintain traceability to code and tests; refine details
 - Deployment and maintenance: manage evolving requirements and feedback from production
 
+## Why is Requirement Analysis Important?
+
+Good software rarely happens by accident. Requirement Analysis gives teams a shared map of what to build and why, before they spend time and money writing code. A few reasons it matters so much in the SDLC:
+
+- Clarity and alignment: It turns scattered ideas into clear, testable expectations. Stakeholders, designers, and engineers can all point to the same source of truth and agree on what “done” really means.
+
+- Risk and cost control: The cheapest time to catch misunderstandings is at the start. By validating needs early, teams avoid scope creep, rework, and late surprises that blow up timelines and budgets.
+
+- Better architecture and quality: Understanding performance, security, compliance, and scalability requirements upfront guides sound architectural choices. This leads to systems that are not just functional, but robust under real-world constraints.
+
+- Testability and transparency: Well‑written requirements translate naturally into acceptance criteria and test cases. This tightens feedback loops, improves coverage, and makes progress visible to non-technical stakeholders.
+
+- Sustainable change: As needs evolve, managed requirements and traceability make it possible to assess impact quickly, prioritize with confidence, and update plans without chaos.
+
