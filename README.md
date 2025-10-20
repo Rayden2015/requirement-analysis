@@ -1,4 +1,39 @@
 # Requirement Analysis in Software Development
 
 This repository provides concise learning materials and practical resources for performing requirement analysis in software projects. It covers key activities such as eliciting, documenting, validating, and managing requirements, and includes notes, templates (e.g., SRS, user stories, use cases), checklists, and example artifacts to support effective analysis throughout the SDLC.
-This are my notes from made while following the ALX Course on FrontEnd Development Pro.
+
+This are my notes made while following the ALX Course on FrontEnd Development Pro.
+
+
+## What is Requirement Analysis?
+
+Requirement Analysis is the systematic process of discovering, analyzing, documenting, validating, and managing the needs and constraints of stakeholders for a software system. Its goal is to ensure a shared, testable understanding of what the system must do and the conditions under which it must operate before (and during) design and implementation.
+
+Key activities typically include:
+- Elicitation: Engage stakeholders through interviews, workshops, observation, surveys, and analysis of existing systems.
+- Analysis and modeling: Clarify, structure, and prioritize requirements; model with use cases, user stories, workflows, and domain models.
+- Specification: Document functional and non-functional requirements in artifacts such as an SRS, user stories with acceptance criteria, and use-case specifications.
+- Validation: Review and verify requirements with stakeholders to ensure correctness, completeness, consistency, and feasibility.
+- Management and traceability: Control changes, maintain a single source of truth, and trace requirements to design, implementation, and tests.
+
+Why it is important in the SDLC:
+- Reduces rework and scope creep by clarifying expectations early and controlling changes.
+- Aligns stakeholders by establishing a common language and shared understanding of outcomes.
+- Improves planning and estimation by clarifying scope, complexity, and constraints.
+- Drives architecture and design decisions by highlighting quality attributes (e.g., performance, security, scalability).
+- Increases quality and testability by making requirements verifiable and traceable to test cases.
+- Mitigates risks and supports compliance by uncovering constraints (legal, regulatory, operational) before costly development work.
+
+Common deliverables:
+- Software Requirements Specification (SRS)
+- User stories and acceptance criteria
+- Use-case diagrams and scenarios
+- Prototypes or wireframes
+- Requirements traceability matrix
+
+When performed:
+- Inception and planning: define vision, scope, and high-level needs
+- Elaboration and design: refine, model, and validate requirements; manage changes
+- Implementation and testing: maintain traceability to code and tests; refine details
+- Deployment and maintenance: manage evolving requirements and feedback from production
+
