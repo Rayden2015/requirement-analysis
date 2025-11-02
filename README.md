@@ -141,3 +141,87 @@ The diagram below shows the use cases for the booking management system, identif
 - Manage Resources
 - View System Analytics
 
+## Acceptance Criteria
+
+Acceptance Criteria are the specific, testable conditions that a feature or requirement must meet to be considered complete and acceptable by stakeholders. They serve as the definitive checklist that bridges the gap between requirements and implementation, ensuring that what gets built matches what was intended.
+
+### Importance of Acceptance Criteria in Requirement Analysis
+
+- **Eliminate Ambiguity:** They translate high-level requirements into concrete, measurable conditions, removing guesswork about what "done" means.
+
+- **Facilitate Testing:** Well-written acceptance criteria directly inform test case creation, making it clear what scenarios need to be verified.
+
+- **Enable Validation:** Stakeholders can review and approve criteria before development begins, ensuring alignment on expectations and reducing rework.
+
+- **Support Estimation:** Clear criteria help development teams better estimate effort by breaking down features into specific, understandable tasks.
+
+- **Improve Communication:** They provide a common language between business analysts, developers, testers, and product owners, reducing miscommunication.
+
+- **Drive Quality:** By defining success conditions upfront, acceptance criteria help prevent defects and ensure the feature works as intended in real-world scenarios.
+
+### Example: Acceptance Criteria for Checkout Feature
+
+**User Story:** As a customer, I want to complete the checkout process for my selected booking so that I can confirm my reservation and receive a confirmation.
+
+**Acceptance Criteria:**
+
+1. **Payment Information Validation**
+   - Given a customer has selected a booking and navigated to checkout
+   - When they enter payment information
+   - Then the system shall validate:
+     - Credit card number format (16 digits, valid Luhn algorithm)
+     - Expiration date is in the future
+     - CVV code is 3-4 digits
+     - Billing address matches credit card address format
+   - And display clear error messages for invalid fields
+   - And prevent form submission until all payment fields are valid
+
+2. **Booking Confirmation**
+   - Given a customer has entered valid payment information and clicked "Complete Booking"
+   - When the payment is successfully processed
+   - Then the system shall:
+     - Create a confirmed booking record in the system
+     - Generate a unique booking confirmation number (format: BK-YYYYMMDD-XXXXX)
+     - Update resource availability to mark the selected time slot as booked
+     - Display a success message with the confirmation number
+   - And redirect the customer to a booking confirmation page
+
+3. **Email Confirmation**
+   - Given a booking has been successfully completed
+   - Then the system shall automatically send an email confirmation to the customer's registered email address
+   - And the email shall include:
+     - Booking confirmation number
+     - Date and time of the booking
+     - Resource details (name, location, duration)
+     - Total amount charged
+     - Cancellation policy and contact information
+   - And the email shall be sent within 30 seconds of booking completion
+
+4. **Payment Processing**
+   - Given a customer submits the checkout form with valid payment details
+   - When the payment gateway responds
+   - Then the system shall:
+     - Process the payment securely through the integrated payment gateway
+     - Handle payment success by completing the booking
+     - Handle payment failure by displaying an appropriate error message without creating a booking
+     - Not charge the customer if the booking fails after payment processing
+   - And all payment transactions shall be logged for audit purposes
+
+5. **Error Handling**
+   - Given the system encounters an error during checkout (network failure, payment gateway timeout, database error)
+   - Then the system shall:
+     - Display a user-friendly error message explaining what went wrong
+     - Not create a booking record if payment processing fails
+     - Preserve the customer's booking selection and payment form data (excluding sensitive payment details)
+     - Provide an option to retry the checkout process
+   - And log the error details for technical support
+
+6. **Booking Timeout**
+   - Given a customer has selected a booking but has not completed checkout within 15 minutes
+   - When they attempt to complete checkout after the timeout period
+   - Then the system shall:
+     - Check if the selected time slot is still available
+     - If available, allow checkout to proceed
+     - If no longer available, display a message indicating the slot has been reserved and redirect to search for alternative slots
+   - And release any temporary hold on the booking resource
+
