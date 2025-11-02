@@ -78,3 +78,66 @@ Good software rarely happens by accident. Requirement Analysis gives teams a sha
   - Define acceptance criteria and link requirements to test cases for traceability.
   - Pilot or prototype critical flows to de-risk assumptions before full implementation.
 
+## Types of Requirements
+
+### Functional Requirements
+
+Functional requirements describe what the system must do—the specific behaviors, features, and functions it should perform. They define the capabilities and operations that users can execute, often expressed in terms of inputs, processes, and outputs.
+
+**Examples for a Booking Management System:**
+- The system shall allow users to search for available bookings by date, time, and resource type.
+- The system shall enable users to create a new booking by selecting a date, time slot, and resource (e.g., meeting room, equipment, service).
+- The system shall validate booking availability in real-time before confirming a reservation.
+- The system shall send automated email confirmations to users upon successful booking creation.
+- The system shall allow users to view their booking history, including past, current, and upcoming reservations.
+- The system shall support booking modification (change date, time, or resource) and cancellation within allowed timeframes.
+- The system shall generate booking reports for administrators, showing occupancy rates, popular time slots, and revenue summaries.
+- The system shall enforce booking rules such as maximum duration per slot, minimum advance notice, and blackout dates.
+
+### Non-functional Requirements
+
+Non-functional requirements specify how well the system should perform, rather than what it does. They cover quality attributes like performance, security, usability, reliability, and scalability that affect the user experience and system behavior under various conditions.
+
+**Examples for a Booking Management System:**
+- **Performance:** The system shall respond to booking search queries within 2 seconds under normal load conditions.
+- **Security:** The system shall encrypt sensitive user data (personal information, payment details) using industry-standard encryption (AES-256) both in transit and at rest.
+- **Usability:** The system shall be accessible via web and mobile interfaces, and support users with screen readers (WCAG 2.1 AA compliance).
+- **Reliability:** The system shall maintain 99.5% uptime, with scheduled maintenance windows communicated 48 hours in advance.
+- **Scalability:** The system shall handle up to 10,000 concurrent users and process 1,000 bookings per minute during peak hours.
+- **Compatibility:** The system shall work on modern browsers (Chrome, Firefox, Safari, Edge) released within the last two major versions, and on iOS 14+ and Android 10+ devices.
+- **Maintainability:** The system codebase shall follow documented coding standards and include automated test coverage of at least 80% for critical booking workflows.
+- **Data integrity:** The system shall prevent double-booking conflicts by implementing optimistic locking and transaction management for concurrent booking requests.
+
+## Use Case Diagrams
+
+Use Case Diagrams are visual representations that illustrate the interactions between actors (users, systems, or external entities) and a system's functionality. They model the system's behavior from a user's perspective, showing what actions users can perform and which actors are involved in each interaction.
+
+### Benefits of Use Case Diagrams
+
+- **Clear Communication:** They provide a visual, easy-to-understand representation of system functionality that stakeholders from technical and non-technical backgrounds can grasp.
+- **Requirement Discovery:** Help identify all actors and their interactions with the system, ensuring comprehensive requirement coverage.
+- **Scope Definition:** Clearly delineate system boundaries by showing what the system does (use cases) and who uses it (actors).
+- **Test Planning:** Serve as a foundation for creating test cases, as each use case represents a scenario that needs testing.
+- **Documentation:** Act as living documentation that evolves with the project and can be referenced throughout the SDLC.
+
+### Booking Management System Use Case Diagram
+
+The diagram below shows the use cases for the booking management system, identifying the key actors and their interactions:
+
+![Booking Management System Use Case Diagram](alx-booking-uc.png)
+
+**Actors:**
+- **Customer:** End users who search for, create, modify, and cancel bookings
+- **Administrator:** System administrators who manage resources, generate reports, and oversee the booking system
+
+**Use Cases:**
+- Search Available Bookings
+- Create Booking
+- Modify Booking
+- Cancel Booking
+- View Booking History
+- Receive Booking Confirmation
+- Generate Reports
+- Manage Resources
+- View System Analytics
+

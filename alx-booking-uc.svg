@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- System Boundary (Booking Management System) -->
+  <rect x="150" y="150" width="500" height="400" fill="none" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="390" y="175" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Booking Management System</text>
+  
+  <!-- Actors -->
+  <!-- Customer (left) -->
+  <line x1="100" y1="300" x2="150" y2="300" stroke="black" stroke-width="2"/>
+  <rect x="20" y="260" width="80" height="80" fill="lightblue" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="340" x2="60" y2="380" stroke="black" stroke-width="2"/>
+  <line x1="30" y1="360" x2="90" y2="360" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="360" x2="60" y2="380" stroke="black" stroke-width="2"/>
+  <text x="60" y="385" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Customer</text>
+  
+  <!-- Administrator (right) -->
+  <line x1="650" y1="350" x2="600" y2="350" stroke="black" stroke-width="2"/>
+  <rect x="700" y="310" width="80" height="80" fill="lightgreen" stroke="black" stroke-width="2"/>
+  <line x1="740" y1="390" x2="740" y2="430" stroke="black" stroke-width="2"/>
+  <line x1="710" y1="410" x2="770" y2="410" stroke="black" stroke-width="2"/>
+  <line x1="740" y1="410" x2="740" y2="430" stroke="black" stroke-width="2"/>
+  <text x="740" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Administrator</text>
+  
+  <!-- Use Cases (Ovals) -->
+  <!-- Customer Use Cases -->
+  <ellipse cx="250" cy="250" rx="80" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="250" y="255" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Search Available</text>
+  <text x="250" y="268" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Bookings</text>
+  <line x1="150" y1="300" x2="250" y2="250" stroke="black" stroke-width="1"/>
+  
+  <ellipse cx="400" cy="230" rx="70" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="400" y="235" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Create Booking</text>
+  <line x1="150" y1="300" x2="400" y2="230" stroke="black" stroke-width="1"/>
+  
+  <ellipse cx="550" cy="250" rx="70" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="550" y="255" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Modify Booking</text>
+  <line x1="150" y1="300" x2="550" y2="250" stroke="black" stroke-width="1"/>
+  
+  <ellipse cx="250" cy="330" rx="70" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="250" y="335" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Cancel Booking</text>
+  <line x1="150" y1="300" x2="250" y2="330" stroke="black" stroke-width="1"/>
+  
+  <ellipse cx="400" cy="310" rx="90" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="400" y="315" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">View Booking</text>
+  <text x="400" y="328" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">History</text>
+  <line x1="150" y1="300" x2="400" y2="310" stroke="black" stroke-width="1"/>
+  
+  <ellipse cx="550" cy="330" rx="70" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="550" y="335" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Receive Confirmation</text>
+  <line x1="150" y1="300" x2="550" y2="330" stroke="black" stroke-width="1"/>
+  
+  <!-- Administrator Use Cases -->
+  <ellipse cx="300" cy="430" rx="70" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="300" y="435" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Generate Reports</text>
+  <line x1="600" y1="350" x2="300" y2="430" stroke="black" stroke-width="1"/>
+  
+  <ellipse cx="450" cy="450" rx="80" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="450" y="455" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Manage Resources</text>
+  <line x1="600" y1="350" x2="450" y2="450" stroke="black" stroke-width="1"/>
+  
+  <ellipse cx="550" cy="430" rx="80" ry="30" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="550" y="435" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">View System</text>
+  <text x="550" y="448" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Analytics</text>
+  <line x1="600" y1="350" x2="550" y2="430" stroke="black" stroke-width="1"/>
+</svg>
